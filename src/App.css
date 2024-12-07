@@ -4,3 +4,26 @@
   background-image: url("/public/ticket.jpg");
   background-size: contain;
 }
+
+@keyframes pulse {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 0.5;
+  }
+}
+
+.pulse-effect {
+  background-color: #29ba9b;
+  animation: pulse 2s linear infinite;
+}
+
+.pulse-container{
+  position: absolute;
+  top: 58px;
+  width: 100%;
+  height: 107px;
+}
