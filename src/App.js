@@ -3,7 +3,9 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
-      <div className="pulse-container pulse-effect"></div>
+      <div className="pulse-container ">
+        <div className="point pulse-effect"></div>
+      </div>
     </div>
   );
 }

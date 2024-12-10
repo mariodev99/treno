@@ -7,23 +7,34 @@
 
 @keyframes pulse {
   0% {
-    width: 0;
-    opacity: 0;
+    scale: 1;
+    opacity: 1;
   }
   100% {
-    width: 100%;
-    opacity: 0.5;
+    scale: 100;
+    opacity: 0;
   }
 }
 
 .pulse-effect {
   background-color: #29ba9b;
-  animation: pulse 2s linear infinite;
+  animation: pulse 1.7s linear infinite;
 }
 
 .pulse-container{
-  position: absolute;
+  position: relative;
   top: 56px;
   width: 100%;
   height: 107px;
+  overflow: hidden;
+}
+
+.point {
+  background-color: #29ba9b;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 35px;
+  border-radius: 999px;
+  z-index: 99;
 }
