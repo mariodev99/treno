@@ -5,7 +5,7 @@ function App() {
   const [backgroundImage, setBackgroundImage] = useState("");
 
   useEffect(() => {
-    const images = ["/ticket.jpg", "/ticket-2.jpg"];
+    const images = ["/ticket.jpg", "/ticket-2.jpg", "/ticket-3.jpg"];
     const randomIndex = Math.floor(Math.random() * images.length);
     setBackgroundImage(images[randomIndex]);
   }, []);
